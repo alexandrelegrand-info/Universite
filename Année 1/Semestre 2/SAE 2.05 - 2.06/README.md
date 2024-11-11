@@ -1,0 +1,1 @@
+Cette SAE a consisté en l'imagination d'un projet de A à Z, nous avons du faire l'analyse des différents besoins, comment nous gérerions notre budget etc. Il nous était également demandé de faire un site très primitif pour simuler notre plateforme.

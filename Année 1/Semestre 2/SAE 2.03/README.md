@@ -1,0 +1,1 @@
+Pour cette SAE, nous avons pu faire une installation automatique de Debian sur une machine virtuelle ainsi que l'installation des paquets souhaités par l'encadrant de la SAE. Notre rapport est disponible en format PDF, HTML et Markdown.

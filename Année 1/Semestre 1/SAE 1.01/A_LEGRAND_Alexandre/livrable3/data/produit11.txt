@@ -1,0 +1,6 @@
+nom : Cray-2
+date : 1985
+entreprise : Cray Research, Inc.
+prix : Environ 17,5 millions de dollars (environ 43 millions de dollars ajustés à l'inflation en 2023)
+description : Le Cray-2 était un superordinateur de deuxième génération qui utilisait des circuits de calcul vectoriel liquide refroidis. Il était incroyablement rapide pour les calculs scientifiques et a été largement utilisé dans la recherche.
+

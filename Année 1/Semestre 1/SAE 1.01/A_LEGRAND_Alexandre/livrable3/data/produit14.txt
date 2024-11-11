@@ -1,0 +1,6 @@
+nom : IBM 701 (IBM 701/701A)
+date : 1952
+entreprise : IBM
+prix : Environ 3,36 millions de dollars (environ 33 millions de dollars ajustés à l'inflation en 2023)
+description : L'IBM 701, également connu sous le nom de Defense Calculator, a été l'un des premiers ordinateurs à transistors produit par IBM. Il était utilisé principalement à des fins de calcul scientifique et d'ingénierie.
+

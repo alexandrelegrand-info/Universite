@@ -1,0 +1,6 @@
+nom : DEC VAX-11
+date : 1977
+entreprise : Digital Equipment Corporation (DEC)
+prix : À partir de 83 000 dollars (environ 360 000 dollars ajustés à l'inflation en 2023)
+description : Le DEC VAX-11 était un minicomputer populaire et polyvalent. Il utilisait une architecture de jeu d'instructions complexe (CISC) et était utilisé dans de nombreuses applications professionnelles et scientifiques.
+

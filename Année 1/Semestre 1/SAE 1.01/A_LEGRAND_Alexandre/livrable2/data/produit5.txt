@@ -1,0 +1,5 @@
+nom : Cray-1
+date : 1976
+entreprise : Cray Research, Inc.
+prix : Environ 8,86 millions de dollars (environ 41,5 millions de dollars ajustés à l'inflation en 2023)
+description : Le Cray-1 est l'un des premiers superordinateurs vectoriels et a été conçu pour des calculs scientifiques et de simulation avancés. Il était équipé d'un processeur vectoriel 64 bits et d'une mémoire de 8 mégaoctets. Le Cray-1 était célèbre pour sa vitesse de traitement exceptionnelle et son design emblématique en forme de C.

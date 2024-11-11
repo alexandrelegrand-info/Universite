@@ -1,0 +1,6 @@
+nom : Sun Microsystems SPARCstation 1
+date : 1989
+entreprise : Sun Microsystems
+prix : 9 950 dollars (environ 21 000 dollars ajustés à l'inflation en 2023)
+description : La SPARCstation 1 était une station de travail basée sur l'architecture SPARC. Elle était utilisée pour des applications techniques et scientifiques.
+

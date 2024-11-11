@@ -1,0 +1,6 @@
+nom : NeXT Computer
+date : 1988
+entreprise : NeXT Inc.
+prix : 6 500 dollars (environ 13 700 dollars ajustés à l'inflation en 2023)
+description : Le NeXT Computer, créé par Steve Jobs après son départ d'Apple, était reconnu pour sa puissance et son système d'exploitation révolutionnaire appelé NeXTSTEP. Il a jeté les bases de nombreuses technologies qui sont devenues essentielles pour le développement d'Internet.
+

@@ -1,0 +1,6 @@
+nom : Amstrad CPC 464
+date : 1984
+entreprise : Amstrad
+prix : 249$ (environ 900 dollars ajustés à l'inflation en 2023)
+description : L'Amstrad CPC 464 était un ordinateur personnel populaire en Europe. Il avait un processeur Z80, 64 Ko de RAM et un lecteur de cassettes intégré, en plus d'un clavier complet.
+

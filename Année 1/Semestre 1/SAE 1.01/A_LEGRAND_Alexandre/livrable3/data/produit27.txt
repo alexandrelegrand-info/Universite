@@ -1,0 +1,6 @@
+nom : NeXTstation
+date : 1990
+entreprise : NeXT, Inc.
+prix : 4 996 dollars (environ 9 700 dollars ajustés à l'inflation en 2023)
+description : La NeXTstation était une station de travail basée sur le système d'exploitation NeXTSTEP. Elle était utilisée pour le développement de logiciels et la recherche.
+

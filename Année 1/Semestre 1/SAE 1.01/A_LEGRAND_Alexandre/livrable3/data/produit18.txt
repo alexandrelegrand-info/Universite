@@ -1,0 +1,6 @@
+nom : Texas Instruments TI-99/4A
+date : 1981
+entreprise : Texas Instruments
+prix : 525 dollars (environ 1 500 dollars ajustés à l'inflation en 2023)
+description : Le TI-99/4A était un ordinateur personnel destiné au grand public. Il utilisait un processeur Texas Instruments TMS9900, avait 16 Ko de RAM et était souvent utilisé pour les jeux et l'éducation.
+

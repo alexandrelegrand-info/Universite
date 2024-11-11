@@ -1,0 +1,6 @@
+nom : Acorn Archimedes
+date : 1987
+entreprise : Acorn Computers
+prix : À partir de 798 livres sterling (environ 2 000 dollars ajustés à l'inflation en 2023)
+description : L'Acorn Archimedes était un ordinateur personnel basé sur le processeur ARM. Il était connu pour sa puissance de calcul et a été largement utilisé dans l'éducation et la recherche.
+

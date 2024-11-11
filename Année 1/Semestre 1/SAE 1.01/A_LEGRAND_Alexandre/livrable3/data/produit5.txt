@@ -1,0 +1,6 @@
+nom : ENIAC
+date : 1946
+entreprise : Université de Pennsylvanie
+prix : Environ 487 000 dollars (environ 6,5 millions de dollars ajustés à l'inflation en 2023)
+description : L'ENIAC (Electronic Numerical Integrator and Computer) est considéré comme le premier ordinateur électronique à usage général. Il était énorme, occupant toute une salle, et utilisait des milliers de tubes à vide pour effectuer des calculs complexes. L'ENIAC a été utilisé pour des calculs balistiques pendant la Seconde Guerre mondiale.
+

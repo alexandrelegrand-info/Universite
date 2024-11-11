@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Alexandre LEGRAND" />
+  <meta name="author" content="Ylies ERTAM" />
+  <meta name="author" content="Vincent JACQUEMELLE" />
+  <title>Rapport SAE 2.03 / Installation de Services Réseaux</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="res/Rapport.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rapport SAE 2.03 / Installation de Services
+Réseaux</h1>
+<p class="author">Alexandre LEGRAND</p>
+<p class="author">Ylies ERTAM</p>
+<p class="author">Vincent JACQUEMELLE</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<h2 id="toc-title">Table des matières</h2>
+<ul>
+<li><a href="#installation-dune-machine-virtuelle"><span
+class="toc-section-number">1</span> Installation d’une Machine
+Virtuelle</a>
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1.1</span>
+Introduction</a>
+<ul>
+<li><a href="#prérequis"><span class="toc-section-number">1.1.1</span>
+Prérequis</a></li>
+</ul></li>
+<li><a href="#étapes-dinstallation"><span
+class="toc-section-number">1.2</span> Étapes d’installation</a>
+<ul>
+<li><a href="#création-dune-machine-virtuelle"><span
+class="toc-section-number">1.2.1</span> Création d’une Machine
+Virtuelle</a></li>
+<li><a href="#configuration-de-limage-iso"><span
+class="toc-section-number">1.2.2</span> Configuration de l’Image
+ISO</a></li>
+<li><a href="#installation-du-système-dexploitation"><span
+class="toc-section-number">1.2.3</span> Installation du Système
+d’Exploitation</a></li>
+<li><a href="#conclusion"><span class="toc-section-number">1.2.4</span>
+Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#installation-dune-machine-virtuelle-automatisée"><span
+class="toc-section-number">2</span> Installation d’une machine virtuelle
+automatisée</a>
+<ul>
+<li><a href="#introduction-1"><span
+class="toc-section-number">2.1</span> Introduction</a></li>
+<li><a href="#étapes-dinstallation-1"><span
+class="toc-section-number">2.2</span> Étapes d’installation</a>
+<ul>
+<li><a href="#préparation"><span class="toc-section-number">2.2.1</span>
+Préparation</a></li>
+<li><a href="#différents-ajouts-demandés"><span
+class="toc-section-number">2.2.2</span> Différents ajouts
+demandés</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#configuration-de-git"><span
+class="toc-section-number">3</span> Configuration de git</a>
+<ul>
+<li><a href="#introduction-2"><span
+class="toc-section-number">3.1</span> Introduction</a>
+<ul>
+<li><a href="#configuration-du-profil"><span
+class="toc-section-number">3.1.1</span> Configuration du profil</a></li>
+<li><a href="#installation-dautres-paquets"><span
+class="toc-section-number">3.1.2</span> Installation d’autres
+paquets</a></li>
+<li><a
+href="#installation-dune-interface-graphique-git-de-notre-choix"><span
+class="toc-section-number">3.1.3</span> Installation d’une interface
+graphique Git de notre choix</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#gitea"><span class="toc-section-number">4</span> Gitea</a>
+<ul>
+<li><a href="#installation"><span class="toc-section-number">4.1</span>
+Installation</a>
+<ul>
+<li><a href="#télécharger-le-paquet"><span
+class="toc-section-number">4.1.1</span> Télécharger le paquet</a></li>
+<li><a href="#préparation-de-lenvironnement"><span
+class="toc-section-number">4.1.2</span> Préparation de
+l’environnement</a></li>
+<li><a href="#création-de-lutilisateur-système"><span
+class="toc-section-number">4.1.3</span> Création de l’utilisateur
+système</a></li>
+<li><a href="#répertoires-nécessaires"><span
+class="toc-section-number">4.1.4</span> Répertoires nécessaires</a></li>
+<li><a href="#configuration-du-répertoire-de-travail"><span
+class="toc-section-number">4.1.5</span> Configuration du répertoire de
+travail</a></li>
+<li><a href="#déplacer-le-fichier-binaire-au-bon-endroit"><span
+class="toc-section-number">4.1.6</span> Déplacer le fichier binaire au
+bon endroit</a></li>
+<li><a href="#auto-complétion-bashzsh"><span
+class="toc-section-number">4.1.7</span> Auto-complétion
+bash/zsh</a></li>
+</ul></li>
+<li><a href="#démarrer-gitea"><span
+class="toc-section-number">4.2</span> Démarrer Gitea</a></li>
+<li><a href="#plus-dinformations"><span
+class="toc-section-number">4.3</span> Plus d’informations</a></li>
+</ul></li>
+<li><a href="#questions">Questions :</a></li>
+<li><a href="#problèmes">Problèmes :</a>
+<ul>
+<li><a href="#problèmes-dinstallation-manuelle"><span
+class="toc-section-number">4.4</span> Problèmes d’installation manuelle
+:</a></li>
+<li><a href="#problèmes-durant-linstallation-automatisé"><span
+class="toc-section-number">4.5</span> Problèmes durant l’installation
+automatisé :</a></li>
+<li><a
+href="#problèmes-durant-linstallation-et-la-mise-en-service-de-gitea"><span
+class="toc-section-number">4.6</span> Problèmes durant l’installation et
+la mise en service de Gitea :</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 data-number="1" id="installation-dune-machine-virtuelle"><span
+class="header-section-number">1</span> Installation d’une Machine
+Virtuelle</h1>
+<h2 data-number="1.1" id="introduction"><span
+class="header-section-number">1.1</span> Introduction</h2>
+<p>La création et l’installation d’une machine virtuelle (VM) permettent
+d’exécuter un système d’exploitation supplémentaire sur une machine
+hôte. Ce rapport détaille le processus d’installation d’une machine
+virtuelle à l’aide de VirtualBox avant de parler du processus
+d’auto-installation.</p>
+<h3 data-number="1.1.1" id="prérequis"><span
+class="header-section-number">1.1.1</span> Prérequis</h3>
+<p>Avant de commencer, assurez-vous que votre système dispose des
+éléments suivants :</p>
+<ul>
+<li><strong>Image ISO du système d’exploitation :</strong> Obtenez
+l’image ISO du système d’exploitation que vous souhaitez installer sur
+la machine virtuelle.</li>
+</ul>
+<h2 data-number="1.2" id="étapes-dinstallation"><span
+class="header-section-number">1.2</span> Étapes d’installation</h2>
+<h3 data-number="1.2.1" id="création-dune-machine-virtuelle"><span
+class="header-section-number">1.2.1</span> Création d’une Machine
+Virtuelle</h3>
+<ol type="1">
+<li><p>Lancez VirtualBox après l’installation.</p></li>
+<li><p>Cliquez sur “Nouvelle” pour créer une nouvelle machine
+virtuelle.</p></li>
+<li><p>Suivez l’assistant de création de machine virtuelle en
+fournissant un nom, un type et une version de système
+d’exploitation.</p>
+<ul>
+<li><p>Allouez 2 Go de RAM pour la machine virtuelle.</p></li>
+<li><p>Créez un disque dur virtuel et allouez 20 Go d’espace de
+stockage.</p></li>
+</ul></li>
+</ol>
+<h3 data-number="1.2.2" id="configuration-de-limage-iso"><span
+class="header-section-number">1.2.2</span> Configuration de l’Image
+ISO</h3>
+<ol type="1">
+<li><p>Dans les paramètres de la machine virtuelle, accédez à la section
+“Stockage”.</p></li>
+<li><p>Sous le contrôleur IDE, ajoutez un périphérique de stockage
+optique.</p></li>
+<li><p>Sélectionnez l’image ISO du système d’exploitation que vous avez
+téléchargée, ici nous avons télécharger une image ISO de Debian 12
+disponible sur le site <a href="https://www.debian.org/">Debian<img
+src="./images/Logo.png" width="23" alt="DebianLogo" /></a>.</p></li>
+</ol>
+<h3 data-number="1.2.3" id="installation-du-système-dexploitation"><span
+class="header-section-number">1.2.3</span> Installation du Système
+d’Exploitation</h3>
+<ol type="1">
+<li><p>Démarrez la machine virtuelle.</p></li>
+<li><p>Suivez les instructions du programme d’installation du système
+d’exploitation.</p></li>
+</ol>
+<figure>
+<img src="./images/Instructions.png" style="width:40.0%"
+alt="Instructions" />
+<figcaption aria-hidden="true">Instructions</figcaption>
+</figure>
+<ol start="3" type="1">
+<li><p>Sélectionnez le disque virtuel que vous avez créé comme
+emplacement d’installation.</p></li>
+<li><p>Complétez le processus d’installation en suivant les étapes
+fournies par le système d’exploitation.</p></li>
+</ol>
+<h3 data-number="1.2.4" id="conclusion"><span
+class="header-section-number">1.2.4</span> Conclusion</h3>
+<p>La machine virtuelle a enfin été installée, maintenant nous allons
+l’installer de façon automatique, c’est-à dire en automatisant nos
+réponses.</p>
+<h1 data-number="2"
+id="installation-dune-machine-virtuelle-automatisée"><span
+class="header-section-number">2</span> Installation d’une machine
+virtuelle automatisée</h1>
+<h2 data-number="2.1" id="introduction-1"><span
+class="header-section-number">2.1</span> Introduction</h2>
+<p>Maintenant nous allons passer à l’installation automatisée d’une
+machine virtuelle, grâce au script <code>AUTOINSTALL_DEBIAN.zip</code>
+fourni.</p>
+<h2 data-number="2.2" id="étapes-dinstallation-1"><span
+class="header-section-number">2.2</span> Étapes d’installation</h2>
+<h3 data-number="2.2.1" id="préparation"><span
+class="header-section-number">2.2.1</span> Préparation</h3>
+<ol type="1">
+<li><p>Premièrement il a fallu aller chercher le script d’installation
+automatisée sur Moodle.</p></li>
+<li><p>Puis il faut insérer le script dans l’espace du disque
+optique.</p></li>
+<li><p>Maintenant il suffit de lancer la machine virtuelle jusqu’au
+démarrage de la machine.</p></li>
+<li><p>Une fois démarré, nous arrivons sur un terminal car aucune
+interface graphique n’a été installée.</p></li>
+<li><p>Pour installer une interface graphique grâce au script, nous
+avons rajouté <code>mate-desktop</code> à la suite de la commande
+<code>tasksel</code> dans le <code>preseed.cfg</code> :</p></li>
+</ol>
+<p><code>tasksel tasksel/first multiselect standard ssh-server, mate-desktop</code></p>
+<figure>
+<img src="./images/Debian.png" title="mate-desktop" style="width:50.0%"
+alt="Environnement MATE" />
+<figcaption aria-hidden="true">Environnement MATE</figcaption>
+</figure>
+<ol start="6" type="1">
+<li>Ensuite on peut relancer la machine et l’installation de base est
+terminée.</li>
+</ol>
+<h3 data-number="2.2.2" id="différents-ajouts-demandés"><span
+class="header-section-number">2.2.2</span> Différents ajouts
+demandés</h3>
+<p>Nous avons dû ajouter les droits <strong>sudo</strong> à
+l’utilisateur <em>user</em>, pour cela nous avons ajouté dans le fichier
+<code>vboxpostinstall.sh</code> la commande suivante :</p>
+<p><code>log_command_in_target usermod -aG sudo "user"</code></p>
+<p>Bien évidemment, nous avons dû automatiser l’installation des
+différents paquets dans le <code>preseed-fr.cfg</code>:</p>
+<p><code>d-i pkgsel/include string sqlite3 sudo curl bash-completion git neofetch</code></p>
+<h1 data-number="3" id="configuration-de-git"><span
+class="header-section-number">3</span> Configuration de git</h1>
+<h2 data-number="3.1" id="introduction-2"><span
+class="header-section-number">3.1</span> Introduction</h2>
+<p>Nous allons nous intéresser au paquet git installé au-dessus, ici
+nous allons configurer un dépôt distant git ainsi qu’un dépôt local.</p>
+<h3 data-number="3.1.1" id="configuration-du-profil"><span
+class="header-section-number">3.1.1</span> Configuration du profil</h3>
+<p>Pour cela, nous allons d’abord configurer notre profil git avec les
+commandes suivantes :</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">&quot;votreprenom votrenom&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">&quot;votre@e.mail&quot;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch <span class="st">&quot;master&quot;</span></span></code></pre></div>
+<p>Les 2 premières commandes servent à identifier la personne, la
+machine qui fait les ajouts sur le dépôt git.</p>
+<p>Quant à la dernière ligne, celle-ci permet à chaque initialisation de
+dépôt git le nom de celui-ci par le mot entre guillemet, ici master.</p>
+<h3 data-number="3.1.2" id="installation-dautres-paquets"><span
+class="header-section-number">3.1.2</span> Installation d’autres
+paquets</h3>
+<p>Nous devons installer les paquets suivants :</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paquets</th>
+<th>Commande</th>
+<th>Explication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gitk</td>
+<td><code>sudo apt-get install gitk</code></td>
+<td><strong>Gitk</strong> est une interface graphique pour Git qui
+permet de visualiser l’historique des commits, les branches et les
+différences entre les versions dans un environnement graphique</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>git-gui</td>
+<td><code>sudo apt-get install git-gui</code></td>
+<td><strong>git-gui</strong> est aussi une interface graphique pour Git
+qui permet de visualiser les commits ou d’initialiser un dépôt. Nous
+pouvons le lancer sans dépôt existant via la commande
+<code>git-gui &amp;</code> pour le lancer en tâche de fond</td>
+</tr>
+</tbody>
+</table>
+<h3 data-number="3.1.3"
+id="installation-dune-interface-graphique-git-de-notre-choix"><span
+class="header-section-number">3.1.3</span> Installation d’une interface
+graphique Git de notre choix</h3>
+<p>Nous avons choisi d’installer <code>Sublime Merge</code>, afin de
+l’installer nous avons suivi les étapes d’installation présentes <a
+href="https://www.sublimemerge.com/docs/linux_repositories">sur leur
+page</a></p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-wget</span> <span class="at">-qO</span> <span class="at">-</span> https://download.sublimetext.com/sublimehq-pub.gpg <span class="kw">|</span> <span class="ex">gpg</span> <span class="at">--dearmor</span> <span class="kw">|</span>  </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg <span class="op">&gt;</span> /dev/null</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">-sudo</span> apt-get install apt-transport-https</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">-echo</span> <span class="st">&quot;deb https://download.sublimetext.com/ apt/stable/&quot;</span> <span class="kw">|</span>  </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> tee /etc/apt/sources.list.d/sublime-text.list</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ex">-sudo</span> apt-get update</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ex">-sudo</span> apt-get install sublime-merge</span></code></pre></div>
+<h1 data-number="4" id="gitea"><span
+class="header-section-number">4</span> Gitea</h1>
+<p>Nous allons maintenant aborder l’installation de <a
+href="https://gitea.com"><code>Gitea</code></a>.</p>
+<h2 data-number="4.1" id="installation"><span
+class="header-section-number">4.1</span> Installation</h2>
+<h3 data-number="4.1.1" id="télécharger-le-paquet"><span
+class="header-section-number">4.1.1</span> Télécharger le paquet</h3>
+<p>Pour commencer nous allons télécharger le paquet avec la commande
+suivante :</p>
+<p>-<code>wget -O gitea https://dl.gitea.com/gitea/1.21.7/gitea-1.21.7-linux-amd64</code></p>
+<p>Puis donner le droit d’exécution :</p>
+<p>-<code>chmod +x gitea</code></p>
+<h3 data-number="4.1.2" id="préparation-de-lenvironnement"><span
+class="header-section-number">4.1.2</span> Préparation de
+l’environnement</h3>
+<p><strong>Avant tout, si vous avez mal installé Git, cela pourrait
+créer des problèmes</strong><a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<h3 data-number="4.1.3" id="création-de-lutilisateur-système"><span
+class="header-section-number">4.1.3</span> Création de l’utilisateur
+système</h3>
+<p>Pour les distributions Debian depuis l’utilisateur
+<strong>root</strong>, il faudra créer un nouvel utilisateur système
+avec la commmande :</p>
+<p><code>-adduser --system --shell /bin/bash --gecos 'Git Version Control' --group --disabled-password --home /home/git git</code></p>
+<h3 data-number="4.1.4" id="répertoires-nécessaires"><span
+class="header-section-number">4.1.4</span> Répertoires nécessaires</h3>
+<p>Puis il faut créer les différents répertoires nécessaires :</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> /var/lib/gitea/<span class="dt">{custom</span><span class="op">,</span><span class="dt">data</span><span class="op">,</span><span class="dt">log}</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chown</span> <span class="at">-R</span> git:git /var/lib/gitea/</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> <span class="at">-R</span> 750 /var/lib/gitea/</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> /etc/gitea</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">chown</span> root:git /etc/gitea</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> 770 /etc/gitea</span></code></pre></div>
+<h3 data-number="4.1.5"
+id="configuration-du-répertoire-de-travail"><span
+class="header-section-number">4.1.5</span> Configuration du répertoire
+de travail</h3>
+<p>Maintenant il faut définir le répertoire dans lequel Gitea va
+travailler :</p>
+<p>-<code>export GITEA_WORK_DIR=/var/lib/gitea/</code></p>
+<h3 data-number="4.1.6"
+id="déplacer-le-fichier-binaire-au-bon-endroit"><span
+class="header-section-number">4.1.6</span> Déplacer le fichier binaire
+au bon endroit</h3>
+<p>-<code>cp gitea /usr/local/bin/gitea</code></p>
+<h3 data-number="4.1.7" id="auto-complétion-bashzsh"><span
+class="header-section-number">4.1.7</span> Auto-complétion bash/zsh</h3>
+<p>Pour l’auto-complétion <code>bash</code>, un script est présent sur
+<a
+href="https://raw.githubusercontent.com/go-gitea/gitea/main/contrib/autocompletion/bash_autocomplete">cette
+page</a> qui pourra être copié dans un fichier dont le chemin est :
+<code>/usr/share/bash-completion/completions/gitea</code></p>
+<p>Pour l’auto-complétion <code>zsh</code>, un autre script est présent
+sur <a
+href="https://raw.githubusercontent.com/go-gitea/gitea/main/contrib/autocompletion/zsh_autocomplete">cette
+page</a> qui pourra être copier dans un fichier dont le chemin est :
+<code>/usr/share/zsh/_gitea</code></p>
+<h2 data-number="4.2" id="démarrer-gitea"><span
+class="header-section-number">4.2</span> Démarrer Gitea</h2>
+<p>Nous créeons un service Linux afin de démarrer Gitea automatiquement
+:</p>
+<p>-<code>sudo systemctl enable gitea --now</code></p>
+<p>Pour démarrer Gitea avec une ligne de commande, nous pouvons inscrire
+celle-ci dans le terminal MATE :</p>
+<p>-<code>GITEA_WORK_DIR=/var/lib/gitea/ /usr/local/bin/gitea web -c /etc/gitea/app.ini</code></p>
+<h2 data-number="4.3" id="plus-dinformations"><span
+class="header-section-number">4.3</span> Plus d’informations</h2>
+<p>Pour plus de renseignements, la page de la documentation complète en
+anglais de Gitea est consultable juste ici : <a
+href="https://docs.gitea.com/">Doc Gitea</a></p>
+<h1 class="unnumbered" id="questions">Questions :</h1>
+<p><strong>Que signifie “64-bit” dans “Debian 64-bit” ?</strong></p>
+<p><a href="https://www.debian.org/ports/amd64/index.fr.html">Le 64-bit
+correspond à l’architecture du processeur, cela permet à ces systèmes
+d’utiliser plus de RAM et donc d’être plus performant</a></p>
+<p><strong>Quel est le nom du fichier XML contenant la configuration de
+votre machine ?</strong></p>
+<p>Sur notre machine, le chemin vers le fichier .xml :</p>
+<p><code>/usr/local/virtual_machine/infoetu/prenom.nom.etu/nomdelamachine.vbox-prev</code></p>
+<p><strong>Qu’est-ce qu’un fichier iso bootable ?</strong></p>
+<p>C’est un fichier sur lequel on met le système d’exploitation pour la
+machine.</p>
+<p><strong>Qu’est-ce que MATE ? GNOME ?</strong></p>
+<p>Ce sont des <a href="https://mate-desktop.org/fr/">interfaces
+graphiques pour Debian</a>.</p>
+<p><strong>Qu’est-ce qu’un serveur web ?</strong></p>
+<p>Un serveur web est un logiciel qui permet de traiter les requêtes
+http pour afficher des pages html.</p>
+<p><strong>Qu’est-ce qu’un serveur ssh ?</strong></p>
+<p>Un serveur ssh est un logiciel qui permet de l’accès sécurisé à un
+système distant ou à une machine via <a
+href="https://www.cloudflare.com/fr-fr/learning/access-management/what-is-ssh/">le
+protocole ssh</a>.</p>
+<p><strong>Qu’est-ce qu’un serveur mandataire ?</strong></p>
+<p><a
+href="https://help.gnome.org/users/gnome-help/stable/net-proxy.html.fr">Un
+serveur mandataire ou un proxy</a>, est un serveur intermédiaire qui
+agit comme un intermédiaire entre les utilisateurs et les serveurs
+auxquels ils accèdent. Il reçoit les requêtes du navigateur pour
+récupérer les pages Web demandées avec leurs éléments afin de décider
+s’il doit vous les transmettre ou non (selon les règles du pays par
+exemple).</p>
+<p><strong>Quelle est la version du noyau Linux utilisé par votre VM
+?</strong></p>
+<p>En tapant la commande uname -a dans la machine virtuel nous obtenons
+le noyau suivant: 6.5.0-18 generic.</p>
+<p><strong>À quoi servent les suppléments invités ? Donner 2 principales
+raisons de les installer ?</strong></p>
+<p>Ils permettent une meilleure intégration du bureau et des meilleures
+performances graphiques par exemple.</p>
+<p><strong>À quoi sert la commande mount (dans notre cas de figure et
+dans le cas général) ?</strong></p>
+<p>Elle permet de rendre accessible un système de fichier à partir d’un
+emplacement particulier dans l’arborescence de fichier.</p>
+<p><strong>Qu’est ce que le projet Debian ? D’où vient le nom Debian
+?</strong></p>
+<p>Le nom tire son origine des prénoms du créateur de Debian, Ian
+Murdock, et de son épouse, Debra comme expliqué <a
+href="https://www.debian.org/doc/manuals/project-history/intro.fr.html#:~:text=La%20prononciation%20officielle%20de%20Debian,et%20de%20son%20%C3%A9pouse%2C%20Debra">sur
+la page racontant l’histoire de Debian</a></p>
+<p><strong>Il existe 3 durées de prise en charge (support) de ces
+versions : la durée minimale, la durée en support long terme (LTS) et la
+durée en support long terme étendue (ELTS). Quelles sont les durées de
+ces prises en charge ?</strong></p>
+<p>La version Stable : Il s’agit de la version principale de Debian,
+elle est stable et fiable, les mise à jours de celle-ci se poursuivront
+5 ans après sa sortie.</p>
+<p>La version Testing : Testing est une version intermédiaire qui
+contient des packages plus récents que la branche Stable. Cependant elle
+est beaucoup moins stable que la version Stable. Une fois les mise à
+jour de la version testing sont arrivées à échéance elle devient alors
+la version Stable.</p>
+<p>La version Unstable : C’est la version de développement de Debian.
+Elle bénéficie des dernières versions des logiciels mais elle ne
+deviendra jamais la version stable.</p>
+<p><a href="https://wiki.debian.org/fr/LTS">Toutes les explications sur
+la page Debian LTS</a></p>
+<p><strong>Pendant combien de temps les mises à jour de sécurité
+seront-elles fournies ?</strong></p>
+<p>Les mises à jour de sécurité sont disponibles 5 ans après la dernière
+version de la <a
+href="https://www.debian.org/releases/index.fr.html">version
+Stable</a>.</p>
+<p><strong>Combien de versions au minimum sont activement maintenues par
+Debian ? Donnez leur nom générique (= les types de distribution)
+?</strong></p>
+<p>La version stable, la version odlstable et la version testing sont
+les 3 versions maintenues par Debian comme on peut le voir <a
+href="https://www.debian.org/releases/index.fr.html">sur la page des
+releases Debian</a>.</p>
+<p><strong>Chaque distribution majeure possède un nom de code différent.
+Par exemple, la version majeure actuelle (Debian 12) se nomme bookworm.
+D’où viennent les noms de code données aux distributions ?</strong></p>
+<p>Le nom des distributions de Debian vient du nom de chaque personnage
+de Toy-Story comme on peut le voir <a
+href="https://www.debian.org/releases/index.fr.html">sur la page des
+releases avec le nom des versions</a>.</p>
+<h1 class="unnumbered" id="problèmes">Problèmes :</h1>
+<h2 data-number="4.4" id="problèmes-dinstallation-manuelle"><span
+class="header-section-number">4.4</span> Problèmes d’installation
+manuelle :</h2>
+<p>Lors de la création d’une machine virtuelle, à la première page, il
+faut cocher une case car le fichier ISO possède une version déjà
+configurée par défaut et ne propose pas de modifier cette installation
+par défaut.</p>
+<h2 data-number="4.5"
+id="problèmes-durant-linstallation-automatisé"><span
+class="header-section-number">4.5</span> Problèmes durant l’installation
+automatisé :</h2>
+<ul>
+<li>Difficultés à trouver l’endroit pour installer l’environnement mate,
+nous avons essayé avec la commande
+<code>log_command_in_target apt-get install mate-desktop</code> dans le
+<code>vboxpostinstall.sh</code> mais ça ne fonctionnait pas. Nous avons
+ensuite trouvé un forum expliquant qu’il fallait l’inscrire dans le
+<code>preseed-fr.cfg</code> avec la commande
+<code>tasksel tasksel/first mate-desktop</code>. Nous avons ensuite fait
+le lien entre cette commande et la commande déjà présente
+<code>tasksel tasksel/first multiselect standard ssh-server</code>.</li>
+</ul>
+<h2 data-number="4.6"
+id="problèmes-durant-linstallation-et-la-mise-en-service-de-gitea"><span
+class="header-section-number">4.6</span> Problèmes durant l’installation
+et la mise en service de Gitea :</h2>
+<ul>
+<li>Nous avons eu des difficultés à comprendre ce que faisaient les
+commandes présentes sur le site de Gitea pour l’installation. Par
+exemple, nous n’avions pas compris que ces commandes créaient un
+utilisateur Git.</li>
+</ul>
+<section class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Vous pouvez par exemple utiliser la
+commande git –version<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

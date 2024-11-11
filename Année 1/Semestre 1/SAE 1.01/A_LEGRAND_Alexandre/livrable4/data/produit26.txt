@@ -1,0 +1,6 @@
+nom : Tandy TRS-80 Model 100
+date : 1983
+entreprise : Tandy Corporation
+prix : 799$ (environ 2 100 dollars ajustés à l'inflation en 2023)
+description : Le TRS-80 Model 100 était un ordinateur portable léger et portable. Il était principalement utilisé pour le traitement de texte et la saisie de données sur le terrain.
+

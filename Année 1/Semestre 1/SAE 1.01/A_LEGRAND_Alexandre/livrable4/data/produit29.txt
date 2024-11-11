@@ -1,0 +1,6 @@
+nom : SGI Indigo
+date : 1991
+entreprise : Silicon Graphics, Inc.
+prix : À partir de 9 900$ (environ 18 000 dollars ajustés à l'inflation en 2023)
+description : Le SGI Indigo était une station de travail graphique avancée utilisée dans les domaines de la CAO, de la modélisation 3D et de la recherche.
+

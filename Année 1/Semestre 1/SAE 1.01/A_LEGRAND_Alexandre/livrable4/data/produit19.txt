@@ -1,0 +1,6 @@
+nom : Amstrad PCW
+date : 1985
+entreprise : Amstrad
+prix : À partir de 499$ (environ 1 200 dollars ajustés à l'inflation en 2023)
+description : L'Amstrad PCW était un ordinateur personnel axé sur le traitement de texte. Il était livré avec un traitement de texte intégré et une imprimante. Il était populaire pour un usage professionnel.
+

@@ -1,0 +1,6 @@
+date : 23 juillet 1985
+nom : Amiga 1000
+entreprise : Commodore International
+prix : 1 295 dollars (environ 3 100 dollars ajustés à l'inflation en 2023)
+description : L'Amiga 1000 était un ordinateur révolutionnaire grâce à ses capacités multimédias avancées, y compris des graphismes et un son exceptionnels. Il était équipé d'un processeur Motorola 68000, de 256 Ko de RAM et était largement utilisé pour les jeux et la création de contenu.
+

@@ -1,0 +1,6 @@
+nom : Xerox Alto
+date : 1973
+prix : Non commercialisé, mais estime à environ 32 000 dollars (environ 190 000 dollars ajustés à l'inflation en 2023)
+entreprise : Xerox Corporation
+description : Le Xerox Alto était un ordinateur révolutionnaire doté d'une interface graphique, d'une souris et d'une imprimante laser. Il a été le précurseur des ordinateurs personnels modernes et a inspiré le développement de l'interface utilisateur graphique.
+

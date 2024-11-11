@@ -1,0 +1,6 @@
+nom : Atari ST
+date : 1985
+entreprise : Atari Corporation
+prix : À partir de 799$ (environ 2 000 dollars ajustés à l'inflation en 2023)
+description : L'Atari ST était un ordinateur personnel populaire pour la création musicale et la publication de graphiques. Il utilisait un microprocesseur Motorola 68000, avait 512 Ko de RAM et était connu pour sa connectivité MIDI.
+

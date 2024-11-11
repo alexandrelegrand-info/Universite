@@ -1,0 +1,6 @@
+nom : Sinclair ZX Spectrum
+date : 1982
+entreprise : Sinclair Research
+prix : 125 livres sterling (environ 570 dollars ajustés à l'inflation en 2023)
+description : Le ZX Spectrum était un micro-ordinateur populaire au Royaume-Uni. Il utilisait un microprocesseur Zilog Z80, avait 16 ou 48 Ko de RAM et était principalement utilisé pour les jeux vidéo et la programmation.
+

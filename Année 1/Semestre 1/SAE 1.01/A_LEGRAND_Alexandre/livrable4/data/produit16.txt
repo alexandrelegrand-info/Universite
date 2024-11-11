@@ -1,0 +1,6 @@
+nom : BBC Micro
+date : 1981
+entreprise : Acorn Computers
+prix : 299$ (environ 1 300 dollars ajustés à l'inflation en 2023)
+description : Le BBC Micro était un ordinateur éducatif largement utilisé au Royaume-Uni. Il utilisait un processeur MOS 6502, avait 16 ou 32 Ko de RAM et était utilisé dans les écoles pour l'apprentissage de la programmation.
+

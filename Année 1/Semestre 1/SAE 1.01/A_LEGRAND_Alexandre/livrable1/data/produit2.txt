@@ -1,0 +1,5 @@
+nom : IBM 5150 (IBM PC)
+date : 12 août 1981
+entreprise : IBM
+prix : Environ 1 565 dollars (environ 4 250 dollars ajustés à l'inflation en 2023)
+description : L'IBM 5150, communément appelé IBM PC, est l'un des premiers ordinateurs personnels à avoir connu un grand succès. Il était alimenté par le processeur Intel 8088 à 4,77 MHz et avait 16 Ko de mémoire vive (RAM). L'IBM PC a contribué à établir la norme de l'architecture PC, ce qui a permis la compatibilité matérielle et logicielle entre différents fabricants.

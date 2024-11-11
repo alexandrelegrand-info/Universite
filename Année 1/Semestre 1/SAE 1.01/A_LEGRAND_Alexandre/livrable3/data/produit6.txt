@@ -1,0 +1,6 @@
+nom : IBM System/360
+date : Avril 1964
+entreprise : IBM
+prix : Les prix variaient de 2 700 à 115 000 dollars par mois (environ 22 000 à 940 000 dollars par mois ajustés à l'inflation en 2023)
+description : L'IBM System/360 était une famille d'ordinateurs compatibles entre eux, ce qui était révolutionnaire à l'époque. Il offrait différentes performances et pouvait être utilisé pour un large éventail d'applications commerciales et scientifiques.
+

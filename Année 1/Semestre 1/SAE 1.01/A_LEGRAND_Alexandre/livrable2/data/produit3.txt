@@ -1,0 +1,5 @@
+nom : Apple Macintosh 128K
+date : 24 janvier 1984
+entreprise : Apple Inc.
+prix : 2 495 dollars (environ 6 350 dollars ajustés à l'inflation en 2023)
+description : Le Macintosh 128K, souvent surnommé le "Macintosh original", a révolutionné l'informatique personnelle avec son interface graphique conviviale et sa souris. Il était équipé d'un processeur Motorola 68000 à 8 MHz, de 128 Ko de RAM et d'un écran monochrome de 9 pouces. Le Macintosh a ouvert la voie à l'informatique moderne axée sur l'interface utilisateur.

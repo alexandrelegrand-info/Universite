@@ -1,0 +1,6 @@
+nom : ZX81 (Timex Sinclair 1000 aux États-Unis)
+date : 1981
+entreprise : Sinclair Research / Timex Corporation
+prix : 49,95 livres sterling (environ 190 dollars ajustés à l'inflation en 2023)
+description : Le ZX81 était un ordinateur personnel abordable. Il utilisait un microprocesseur Zilog Z80, avait 1 Ko de RAM et était livré en kit à assembler soi-même.
+

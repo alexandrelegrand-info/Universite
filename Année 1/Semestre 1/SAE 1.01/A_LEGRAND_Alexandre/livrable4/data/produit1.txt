@@ -1,0 +1,6 @@
+entreprise : MITS
+nom : Altair 8800
+date : 1975
+prix : 439$ (environ 2 100 dollars ajustés à l'inflation en 2023)
+description : L'Altair 8800 est souvent considéré comme le premier micro-ordinateur. Il était basé sur le processeur Intel 8080, disposait de 256 octets de mémoire et était livré en kit à assembler. L'Altair a inspiré de nombreux amateurs et entrepreneurs informatiques.
+

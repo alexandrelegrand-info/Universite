@@ -1,0 +1,6 @@
+nom : Commodore PET
+date : 1977
+entreprise : Commodore International
+prix : 795 dollars (environ 3 400 dollars ajustés à l'inflation en 2023)
+description : Le Commodore PET (Personal Electronic Transactor) était l'un des premiers ordinateurs personnels à intégrer un écran et un clavier. Il utilisait un microprocesseur MOS 6502 et était principalement utilisé dans l'éducation.
+

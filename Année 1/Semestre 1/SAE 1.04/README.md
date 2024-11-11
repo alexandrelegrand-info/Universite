@@ -1,0 +1,1 @@
+Cette SAE consistait en la création d'une base de données sur une société d'aide à domicile en binôme. Nous avons utilisé une base access. Un compte rendu est aussi disponible.

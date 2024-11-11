@@ -1,0 +1,6 @@
+nom : Commodore VIC-20
+date : 1980
+entreprise : Commodore International
+prix : 299$ (environ 1 000 dollars ajustés à l'inflation en 2023)
+description : Le Commodore VIC-20 était l'un des premiers ordinateurs personnels à se vendre à plus d'un million d'exemplaires. Il utilisait un microprocesseur MOS 6502 et était souvent utilisé pour les jeux vidéo et la programmation.
+

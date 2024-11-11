@@ -1,0 +1,6 @@
+nom : Apple II
+date : Avril 1977
+entreprise : Apple Inc.
+prix : 1 298 dollars (environ 5 600 dollars ajustés à l'inflation en 2023)
+description : L'Apple II était l'un des premiers ordinateurs personnels largement adoptés par le grand public. Il était équipé d'un microprocesseur MOS Technology 6502, de 4 Ko de RAM (extensible à 48 Ko) et d'une couleur graphique. L'Apple II a été très populaire dans les écoles et les foyers.
+

@@ -1,0 +1,6 @@
+nom : Apple I
+date : 1976
+entreprise : Apple Computer, Inc.
+prix : 666$ (environ 3 200 dollars ajustés à l'inflation en 2023)
+description : L'Apple I a été le premier ordinateur personnel d'Apple. Il a été vendu comme une carte mère que les utilisateurs devaient assembler eux-mêmes. Il utilisait un microprocesseur MOS Technology 6502 et avait 4 Ko de RAM.
+

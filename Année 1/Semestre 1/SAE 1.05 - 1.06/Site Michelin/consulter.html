@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Trajets Disponibles</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/mich.bmp" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+      </head>
+      <body>
+        <header>
+            <img class="michelin" src="images/michelin-logo.png" alt="Logo Michelin"/>
+            <nav>
+                <li>
+                    <ul>
+                        <li><a href="index.html" class="bouton"><img src="images/BoutonIndex.png" alt="Logo Accueil"/>Accueil</a></li>
+                        <li><a href="dispo.html" class="bouton"><img src="images/BoutonDispo.png" alt="Logo Trajets"/>Trajets</a></li>
+                        <li><a href="contact.html" class="bouton"><img src="images/BoutonContact.png" alt="Logo Contact">Nous contacter</a></li>
+                    </ul>
+                </li>
+                </nav>
+        </header>
+        <main>
+            <section>
+                <section class="banniere">
+                    <h2> Filtres : </h2>
+                    <select name="filtre" id="filtre">
+                        <option> Localisation </option>
+                        <option> Autour de moi (0-2km) </option>
+                        <option> 2-5km </option>
+                        <option> 5-10km </option>
+                    </select>
+                    <select name="filtre" id="filtre">
+                        <option> Prix </option>
+                        <option> Croissant </option>
+                        <option> Décroissant </option>
+                    </select>
+                    <select name="filtre" id="filtre">
+                        <option> Départ </option>
+                        <option> Aujourd'hui </option>
+                        <option> Cette semaine </option>
+                        <option> Ce mois-ci </option>
+                    </select>
+                    <input style="width : 100px;" type="submit" value="Appliquer"/>
+                </section>
+                <section class="infoConducteur">
+                    <h3>Départ</h3>
+                    <h3>Arrivé</h3>
+                    <h3>Date</h3>
+                    <h3>Prix</h3>
+                    <h3>Sièges</h3>
+                    <form action="recap.html">
+                        <div>
+                            <input id="reserve" type="image" value="Réserver"/>
+                        </div>
+                    </form>
+                </section>
+                <section class="infoConducteur">
+                    <h3>Départ : Lille</h3>
+                    <h3>Arrivé : Lambersaert</h3>
+                    <h3>Date : 15/01/2024 à 15:00:00</h3>
+                    <h3>Prix : 2€</h3>
+                    <h3>Sièges : 2/3</h3>
+                    <form action="recap.html">
+                        <div>
+                            <input id="reserve" type="image" value="Réserver"/>
+                        </div>
+                    </form>
+                </section>
+                <section class="infoConducteur">
+                    <h3>Départ : Lomme</h3>
+                    <h3>Arrivé : Villeneuve d'Ascq</h3>
+                    <h3>Date : 09/01/2024 à 07:00:00</h3>
+                    <h3>Prix : 0€</h3>
+                    <h3>Sièges : 0/2</h3>
+                    <form action="recap.html">
+                        <div>
+                            <input id="reserve" type="image" value="Réserver"/>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <img class="michelin" src="images/michelin-logo.png" alt="Logo Michelin"/>
+            <p>
+                <li>
+                    <ul><a href="infoCookies.html">Informations cookies</a></ul>
+                    <ul><a href="donnees.html">Données personnelles</a></ul>
+                    <ul><a href="Conditions.html">Conditions d'utilisation</a></ul>
+                </li>
+            </p>
+        </footer>
+      </body>
+</html>

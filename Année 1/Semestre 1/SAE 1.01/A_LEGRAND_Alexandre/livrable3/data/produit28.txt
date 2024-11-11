@@ -1,0 +1,6 @@
+nom : Osborne 1
+date : 1981
+entreprise : Osborne Computer Corporation
+prix : 1 795 dollars (environ 5 500 dollars ajustés à l'inflation en 2023)
+description : L'Osborne 1 était l'un des premiers ordinateurs portables commercialement réussis. Il était livré avec un ensemble complet de logiciels et était populaire auprès des professionnels.
+

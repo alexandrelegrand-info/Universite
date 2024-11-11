@@ -1,0 +1,6 @@
+nom : Macintosh SE
+date : Mars 1987
+entreprise : Apple Inc.
+prix : 2 898 dollars (environ 6 500 dollars ajustés à l'inflation en 2023)
+description : Le Macintosh SE était une évolution de l'original Macintosh. Il avait un processeur plus rapide, une mémoire extensible et un lecteur de disquette intégré. Il était apprécié pour sa compacité et sa fiabilité.
+

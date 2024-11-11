@@ -1,0 +1,6 @@
+nom : Tandy Color Computer (CoCo)
+date : 1980
+entreprise : Tandy Corporation
+prix : 399 dollars (environ 1 300 dollars ajustés à l'inflation en 2023)
+description : Le Tandy Color Computer (CoCo) était un ordinateur personnel abordable utilisant un microprocesseur Motorola 6809 et était principalement utilisé pour les jeux et l'apprentissage de la programmation.
+

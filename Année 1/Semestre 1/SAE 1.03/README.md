@@ -1,0 +1,1 @@
+Cette SAE consistait en la création d'un environnement de travail Debian. Ici, la seule trace je peux garder de cette SAE est cette notice en anglais décrivant étape par étape la réalisation de cet environnement de travail Debian.
