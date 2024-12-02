@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univlille.g2.sae302.controller.AjoutPointController">
+    <Label text="Ajout d'un nouveau point" style="-fx-font-size: 18;" />
+    <GridPane fx:id="axesGrid" hgap="10" vgap="10" alignment="CENTER" />
+    <Button text="Valider" onAction="#validerPoint" />
+</VBox>

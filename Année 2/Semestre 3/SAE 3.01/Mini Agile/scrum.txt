@@ -1,0 +1,72 @@
+Les Artefacts de Scrum
+    Les artefacts de Scrum représentent un travail ou une valeur. Ils sont conçus pour maximiser la
+    transparence des informations clés. Ainsi, tous ceux qui les inspectent ont la même base d'adaptation.
+    Chaque artefact contient un engagement qui apporte l’information nécessaire à la transparence et au
+    focus rendant possible la mesure de la progression :
+    ● Pour le Product Backlog, il s'agit de l'Objectif de Produit.
+    ● Pour le Sprint Backlog, c'est l'Objectif de Sprint.
+    ● Pour l'Increment, c'est la Definition of Done (définition de Fini).
+    Ces engagements existent pour renforcer l'empirisme et les valeurs Scrum au sein de la Scrum Team et ses
+    parties prenantes
+
+
+Developers
+    Les Developers sont les membres de la Scrum Team qui s'engagent à traiter tout ou partie utile d’un
+    Increment à chaque Sprint.
+    Les compétences spécifiques requises pour les Developers sont souvent larges et varient selon le domaine
+    d’activité. Toutefois, les Developers sont toujours redevables de :
+    ● Créer un plan de Sprint, un Sprint Backlog ;
+    ● Inculquer la notion de qualité en adhérant à une Definition of Done ;
+    ● Adapter leur plan chaque jour par rapport à l'Objectif de Sprint ; et
+    ● Se tenir mutuellement responsables en tant que professionnels.
+
+Product Owner
+    Le Product Owner est redevable de maximiser la valeur du produit résultant du travail de la Scrum Team.
+    La manière de procéder peut varier considérablement selon les organisations, les Scrum Teams et les
+    individus.
+    Le Product Owner est également redevable de la gestion efficace du Product Backlog. Ce qui inclut :
+    ● Formuler et communiquer explicitement l'Objectif de Produit ;
+    7
+    ● Créer et communiquer clairement les éléments du Product Backlog ;
+    ● Ordonner les éléments dans le Product Backlog ; et
+    ● S'assurer que le Product Backlog est transparent, visible et compris.
+    Le Product Owner peut effectuer le travail ci‐dessus ou peut déléguer ce travail à d'autres. Quoi qu’il en
+    soit, le Product Owner en demeure redevable.
+    Pour que les Product Owners réussissent, toute l'organisation doit respecter leurs décisions. Ces décisions
+    sont visibles dans le contenu et dans l'ordre du Product Backlog et, via un Increment inspectable lors de
+    la Sprint Review.
+    Le Product Owner est une personne et non un comité. Le Product Owner peut représenter les besoins de
+    nombreuses parties prenantes dans le Product Backlog. Ceux qui souhaitent modifier le Product Backlog
+    peuvent le faire en essayant de convaincre le Product Owner.
+
+Scrum Master
+    Le Scrum Master est redevable de la mise en place de Scrum tel que défini dans le Guide Scrum. Pour ce
+    faire, il se doit d’aider tout un chacun, l’équipe et l’organisation à comprendre la théorie et la pratique
+    Scrum.
+    Le Scrum Master est redevable de l’efficacité de la Scrum Team. Il permet à la Scrum Team d'améliorer ses
+    pratiques en suivant le cadre de travail Scrum.
+    Le Scrum Master est, avant tout, un véritable leader au service de la Scrum Team et de l'ensemble de
+    l'organisation.
+    Le Scrum Master rend service à la Scrum Team de plusieurs façons :
+    ● Accompagner les membres de l'équipe en matière d'autogestion et de pluridisciplinarité ;
+    ● Aider la Scrum Team à se focaliser sur la création d'Increments de grande valeur qui répondent à
+    la Definition of Done ;
+    ● Faire en sorte qu’il n’y ait pas d’obstacles pouvant entraver la progression de la Scrum Team ; et
+    ● S'assurer que tous les événements Scrum ont bien lieu et sont efficients, productifs et respectent
+    bien les temps impartis (timeboxés : gardés dans une boîte de temps).
+    Le Scrum Master rend service au Product Owner de plusieurs façons :
+    ● L’aider à trouver des techniques pour définir efficacement l'Objectif de Produit et gérer
+    efficacement du Product Backlog ;
+    ● Sensibiliser la Scrum Team à la nécessité de bien comprendre le besoin d’avoir des éléments du
+    Product Backlog clairs et concis ;
+    ● Encourager l’application de la planification produit empirique dans un environnement complexe ;
+    et
+    ● Faciliter la collaboration des parties prenantes, selon les demandes ou les besoins.
+    Le Scrum Master rend service à l'organisation de plusieurs façons :
+    ● Accompagner, former et encadrer l'organisation dans son adoption de Scrum ;
+    ● Planifier et apporter conseils sur les implémentations de Scrum au sein de l’organisation ;
+    8
+    ● Faciliter la compréhension de l’approche empirique en environnement complexe des employés et
+    des parties prenantes ; et
+    ● Contribuer à lever les obstacles qui peuvent se dresser entre les parties prenantes et les Scrum
+    Team
